@@ -1,7 +1,9 @@
-package com.pedrosoares.desafiobemobi;
+package com.pedrosoares.desafiobemobi.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.pedrosoares.desafiobemobi.R;
 
 public class MainActivity extends AppCompatActivity {
 
