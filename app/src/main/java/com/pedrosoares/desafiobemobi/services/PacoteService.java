@@ -8,5 +8,8 @@ import retrofit2.http.GET;
 public interface PacoteService {
 
     @GET("kids")
-    Call <PacoteSync> buscaApps();
+    Call <PacoteSync> buscarKids();
+
+    @GET("games")
+    Call <PacoteSync> buscarGames();
 }

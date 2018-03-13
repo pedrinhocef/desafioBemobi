@@ -10,14 +10,14 @@ import com.pedrosoares.desafiobemobi.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Intent tratarConexao;
+    private Intent mTratarConexao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tratarConexao = new Intent(this, TratarConexao.class);
+        mTratarConexao = new Intent(this, TratarConexao.class);
 
     }
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         if (isOnline()){
 
         } else {
-            startActivity(tratarConexao);
+            startActivity(mTratarConexao);
         }
     }
 
