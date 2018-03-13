@@ -24,12 +24,17 @@ android {
             applicationId "com.pedrosoares.desafiobemobi.claro"
             versionName "1.0"
             flavorDimensions "default"
-
+            minSdkVersion 19
+            targetSdkVersion 27
+            versionCode 1
         }
         oi {
             applicationId "com.pedrosoares.desafiobemobi.oi"
             versionName "1.0"
             flavorDimensions "default"
+            minSdkVersion 19
+            targetSdkVersion 27
+            versionCode 1
         }
     }
 }
