@@ -41,11 +41,9 @@ public class TratarConexao extends AppCompatActivity {
 
         if ( manager != null ) {
             manager.getActiveNetworkInfo();
-            //Verifica internet pela WIFI
             if (manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected()) {
                 return true;
             }
-            //Verifica se tem internet móvel
             if (manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).isConnected()) {
                 return true;
             }

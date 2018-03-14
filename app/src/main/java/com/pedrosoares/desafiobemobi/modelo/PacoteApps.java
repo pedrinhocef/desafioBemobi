@@ -7,7 +7,7 @@ public class PacoteApps implements Serializable {
     private String name;
     private String description;
     private String price;
-    private int tamanho;
+    private String tamanho;
     private String cover;
     private String capaDetalhes;
 
@@ -23,7 +23,7 @@ public class PacoteApps implements Serializable {
         return price;
     }
 
-    public int getTamanho() {
+    public String getTamanho() {
         return tamanho;
     }
 

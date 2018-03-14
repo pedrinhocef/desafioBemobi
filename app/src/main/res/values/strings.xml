@@ -7,4 +7,6 @@
     <string name="price_app">Preço : </string>
     <string name="tamanho">100 MB</string>
     <string name="name_app">Tom Raider</string>
+    <string name="imagem_games">Imagem clicavel vai para os games</string>
+    <string name="imagem_kids">Imagem clicavel vai para os apps kids</string>
 </resources>

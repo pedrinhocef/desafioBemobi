@@ -20,6 +20,9 @@
         </activity>
         <activity android:name=".activity.TratarConexao"/>
         <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.AppsKids" />
+        <activity android:name=".activity.DetalhesApps" />
+        <activity android:name=".activity.AppsGames" />
     </application>
 
 </manifest>
