@@ -4,4 +4,7 @@
     <string name="tryagain">Tentar Novamente</string>
     <string name="baixar_app">Baixar App</string>
     <string name="imagem_do_app">Imagem do Aplicativo</string>
+    <string name="price_app">Preço : </string>
+    <string name="tamanho">100 MB</string>
+    <string name="name_app">Tom Raider</string>
 </resources>
