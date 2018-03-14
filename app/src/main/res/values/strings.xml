@@ -2,4 +2,6 @@
     <string name="app_name">DesafioBemobi</string>
     <string name="nowifi">Sem conexão com a internet! </string>
     <string name="tryagain">Tentar Novamente</string>
+    <string name="baixar_app">Baixar App</string>
+    <string name="imagem_do_app">Imagem do Aplicativo</string>
 </resources>
