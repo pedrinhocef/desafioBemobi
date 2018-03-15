@@ -20,9 +20,21 @@
         </activity>
         <activity android:name=".activity.TratarConexao"/>
         <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.AppsKids" />
-        <activity android:name=".activity.DetalhesApps" />
-        <activity android:name=".activity.AppsGames" />
+
+        <activity android:name=".activity.AppsKids"
+            android:parentActivityName=".activity.MainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity"/>
+
+        <activity android:name=".activity.DetalhesApps"
+            android:parentActivityName=".activity.MainActivity"/>
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity.MainActivity"/>
+
+        <activity android:name=".activity.AppsGames"
+            android:parentActivityName=".activity.MainActivity"/>
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity.MainActivity"/>
     </application>
 
 </manifest>

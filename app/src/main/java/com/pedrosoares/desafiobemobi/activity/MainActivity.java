@@ -1,12 +1,15 @@
 package com.pedrosoares.desafiobemobi.activity;
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.view.Window;
 import android.widget.ImageButton;
 
 import com.pedrosoares.desafiobemobi.R;
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -27,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent vaiProKids = new Intent(MainActivity.this, AppsKids.class);
-                startActivity(vaiProKids);
+                ActivityOptionsCompat opts = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this);
+                ActivityCompat.startActivity(MainActivity.this, vaiProKids, opts.toBundle());
             }
         });
 
@@ -36,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent vaiProGames = new Intent(MainActivity.this, AppsGames.class);
-                startActivity(vaiProGames);
+                ActivityOptionsCompat opts = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this);
+                ActivityCompat.startActivity(MainActivity.this, vaiProGames, opts.toBundle());
             }
         });
 

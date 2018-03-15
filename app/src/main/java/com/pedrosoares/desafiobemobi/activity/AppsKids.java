@@ -9,6 +9,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -24,20 +25,24 @@ import retrofit2.Response;
 
 public class AppsKids extends AppCompatActivity {
 
+    static final String STATE_ACTIVITY = "salvando";
     private ListView mListView;
     private PacoteAppsAdapter mAdapter;
     private PacoteApps mPacoteApps;
     private Intent mTratarConexao;
     private PacoteSync mPacoteSync;
-    static final String STATE_ACTIVITY = "salvando";
     private SwipeRefreshLayout mRefresh;
 
     protected void onCreate(Bundle savedIntanceState) {
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         super.onCreate(savedIntanceState);
         setContentView(R.layout.activity_list_view);
 
-        mTratarConexao = new Intent(this, TratarConexao.class);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
+        mTratarConexao = new Intent(this, TratarConexao.class);
 
         mListView = findViewById(R.id.lv_pacotes);
         mListView.setAdapter(mAdapter);

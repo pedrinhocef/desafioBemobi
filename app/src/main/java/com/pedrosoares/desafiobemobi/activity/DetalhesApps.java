@@ -21,7 +21,7 @@ public class DetalhesApps extends AppCompatActivity {
         setContentView(R.layout.activity_detalhes);
         setTitle(getString(R.string.titulo_detalhes_app));
 
-        if (getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
@@ -55,5 +55,11 @@ public class DetalhesApps extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
