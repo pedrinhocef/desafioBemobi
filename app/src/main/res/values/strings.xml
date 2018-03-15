@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">DesafioBemobi</string>
-    <string name="nowifi">Sem conexão com a internet! </string>
-    <string name="tryagain">Tentar Novamente</string>
-    <string name="baixar_app">Baixar App</string>
-    <string name="imagem_do_app">Imagem do Aplicativo</string>
-    <string name="price_app">Preço : </string>
-    <string name="tamanho">100 MB</string>
-    <string name="name_app">Tom Raider</string>
-    <string name="imagem_games">Imagem clicavel vai para os games</string>
-    <string name="imagem_kids">Imagem clicavel vai para os apps kids</string>
+    <string name="app_name" translatable="false">DesafioBemobi</string>
+    <string name="nowifi" translatable="false">Sem conexão com a internet! </string>
+    <string name="tryagain" translatable="false">Tentar Novamente</string>
+    <string name="baixar_app" translatable="false">Baixar App</string>
+    <string name="imagem_do_app" translatable="false">Imagem do Aplicativo</string>
+    <string name="price_app" translatable="false">Preço : </string>
+    <string name="tamanho" translatable="false">100 MB</string>
+    <string name="name_app" translatable="false">Tomb Raider</string>
+    <string name="imagem_games" translatable="false">Imagem clicavel vai para os games</string>
+    <string name="imagem_kids" translatable="false">Imagem clicavel vai para os apps kids</string>
+    <string name="baixando_app">Baixando App Selecionada</string>
+    <string name="titulo_detalhes_app">Detalhes do App</string>
 </resources>

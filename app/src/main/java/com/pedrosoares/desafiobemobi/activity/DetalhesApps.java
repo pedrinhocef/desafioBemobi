@@ -19,6 +19,7 @@ public class DetalhesApps extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhes);
+        setTitle(getString(R.string.titulo_detalhes_app));
 
         if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -49,7 +50,7 @@ public class DetalhesApps extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (pacoteApps != null) {
-                    Toast.makeText(DetalhesApps.this, "Baixando App Selecionada "
+                    Toast.makeText(DetalhesApps.this, getString(R.string.baixando_app)
                             + pacoteApps.getName(), Toast.LENGTH_SHORT).show();
                 }
             }

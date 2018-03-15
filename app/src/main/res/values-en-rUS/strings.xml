@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bemobi Challenge</string>
+    <string name="tryagain" translatable="false">Try Again</string>
+    <string name="nowifi" translatable="false">No Nonnection</string>
+    <string name="price_app" translatable="false">Price :</string>
+    <string name="imagem_do_app" translatable="false">Picture of App</string>
+    <string name="imagem_games" translatable="false">Clikable image goes to the games</string>
+    <string name="imagem_kids" translatable="false">Clikable image goes to the apps kids</string>
+    <string name="baixar_app" translatable="false">Download Now</string>
+    <string name="baixando_app">downloading selected app</string>
+    <string name="name_app" translatable="false">Tomb Raider</string>
+    <string name="titulo_detalhes_app">App Details</string>
+</resources>
