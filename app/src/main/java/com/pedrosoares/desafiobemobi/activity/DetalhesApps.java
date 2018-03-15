@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.pedrosoares.desafiobemobi.R;
 import com.pedrosoares.desafiobemobi.modelo.PacoteApps;
+import com.pedrosoares.desafiobemobi.util.MoedaUtil;
 import com.squareup.picasso.Picasso;
 
 public class DetalhesApps extends AppCompatActivity {
@@ -36,23 +37,21 @@ public class DetalhesApps extends AppCompatActivity {
         final PacoteApps pacoteApps = (PacoteApps) intent
                 .getSerializableExtra("pacoteApps");
 
-        if (pacoteApps != null) {
-            nomeDoApp.setText(pacoteApps.getName());
-            precoDoApp.setText(pacoteApps.getPrice());
-            tamanhoDoApp.setText(pacoteApps.getTamanho());
-            descDoApp.setText(pacoteApps.getDescription());
-            Picasso.with(this).load(pacoteApps.getCapaDetalhes())
-                    .placeholder(R.mipmap.ic_launcher).into(imagemDoApp);
+        String moedaBrasileira = MoedaUtil
+                .formataParaBrasileiro(pacoteApps.getPrice());
 
-        }
+        nomeDoApp.setText(pacoteApps.getName());
+        precoDoApp.setText(moedaBrasileira);
+        tamanhoDoApp.setText(pacoteApps.getTamanho());
+        descDoApp.setText(pacoteApps.getDescription());
+        Picasso.with(this).load(pacoteApps.getCapaDetalhes())
+                .placeholder(R.mipmap.ic_launcher).into(imagemDoApp);
 
         btnBaixarApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (pacoteApps != null) {
-                    Toast.makeText(DetalhesApps.this, getString(R.string.baixando_app)
-                            + pacoteApps.getName(), Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(DetalhesApps.this, getString(R.string.baixando_app)
+                        + pacoteApps.getName(), Toast.LENGTH_SHORT).show();
             }
         });
 

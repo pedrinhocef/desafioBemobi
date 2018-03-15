@@ -1,6 +1,5 @@
 package com.pedrosoares.desafiobemobi.activity;
 
-import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;

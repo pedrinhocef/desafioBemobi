@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.pedrosoares.desafiobemobi.R;
 import com.pedrosoares.desafiobemobi.modelo.PacoteApps;
+import com.pedrosoares.desafiobemobi.util.MoedaUtil;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -61,7 +62,9 @@ public class PacoteAppsAdapter extends BaseAdapter{
         tamanhoApp.setText(pacoteApps.getTamanho());
 
         TextView priceApp = view.findViewById(R.id.item_pacote_preco);
-        priceApp.setText(pacoteApps.getPrice());
+        String moedaBrasileira = MoedaUtil
+                .formataParaBrasileiro(pacoteApps.getPrice());
+        priceApp.setText(moedaBrasileira);
 
         return view;
     }
