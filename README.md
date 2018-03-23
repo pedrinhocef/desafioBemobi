@@ -4,6 +4,6 @@ App desenvolvido para um desafio da Bemobi.
 - Retrofit
 - Picasso
 - Constraint Layout
-- Flavor 
+- Flavors
 # Link da Empresa 
 https://www.bemobi.com.br
